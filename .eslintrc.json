@@ -44,10 +44,9 @@
 				"props": false
 			}
 		],
-		"no-tabs": ["error", { "allowIndentationTabs": true }],
 		"no-plusplus": 0,
 		"no-console": 0,
-		"import/prefer-default-export": 1,
+		"import/prefer-default-export": 0,
 		"import": 0,
 		"func-names": 0,
 		"space-before-function-paren": 0,
@@ -85,9 +84,9 @@
 			"error",
 			{
 				"singleQuote": true,
-				"printWidth": 100,
 				"tabWidth": 2,
-				"useTabs": true
+				"useTabs": true,
+				"jsxSingleQuote": true
 			}
 		],
 		"jsx-a11y/href-no-hash": "off",
@@ -98,5 +97,6 @@
 			}
 		]
 	},
-	"plugins": ["prettier", "react", "react-hooks"]
+	"plugins": ["prettier", "react", "react-hooks"],
+	"root": true
 }

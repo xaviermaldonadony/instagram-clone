@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 // import seed file
-import { seedDatabase } from '../seed';
+// import { seedDatabase } from '../seed';
 
 // here is where I want to call the seed file (only ONCE!!)
 
