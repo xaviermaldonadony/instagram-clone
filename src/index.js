@@ -12,5 +12,3 @@ render(
 	</FirebaseContext.Provider>,
 	document.getElementById('root')
 );
-
-// 2:59

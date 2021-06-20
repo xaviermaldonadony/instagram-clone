@@ -25,6 +25,8 @@
 		"no-debugger": 0,
 		"no-alert": 0,
 		"no-unused-vars": 1,
+		// "react/no-typos": 0,
+		"react/prop-types": 1,
 		"prefer-const": [
 			"error",
 			{
@@ -39,9 +41,9 @@
 			}
 		],
 		"no-param-reassign": [
-			2,
+			1,
 			{
-				"props": false
+				"props": true
 			}
 		],
 		"no-plusplus": 0,
