@@ -41,7 +41,7 @@
 			}
 		],
 		"no-param-reassign": [
-			1,
+			0,
 			{
 				"props": true
 			}
