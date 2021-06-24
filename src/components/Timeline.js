@@ -10,7 +10,6 @@ export default function Timeline() {
 	//  if the user has no photos, tell them to create some photos
 
 	const { photos } = usePhotos();
-	console.log('photos', photos);
 
 	return (
 		<div className='container col-span-2'>
@@ -26,5 +25,3 @@ export default function Timeline() {
 		</div>
 	);
 }
-
-// 6:11

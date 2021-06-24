@@ -17,7 +17,7 @@ export default function Comments({
 			<div className='p-4 pt-1 pb-4'>
 				{comments.length >= 3 && (
 					<p className='text-small text-gray-base mb-1 cursor-pointer'>
-						view all {comments.length} comments
+						view all comments
 					</p>
 				)}
 				{comments.slice(0, 3).map((item) => (
