@@ -6,7 +6,6 @@ export async function doesUsernameExist(username) {
 		.collection('users')
 		.where('username', '==', username)
 		.get();
-	// console.log('results.docs', result.docs);
 	return result.docs.map((user) => user.data().length > 0);
 }
 
@@ -124,7 +123,6 @@ export async function getPhotos(userId, following) {
 
 export async function getUserPhotosByUserId(userId) {
 	// const [user] = await getUserByUsername(username);
-	// console.log('user', user);
 	const result = await firebase
 		.firestore()
 		.collection('photos')
@@ -163,16 +161,6 @@ export async function toggleFollow(
 	profileUserId,
 	followingUserId
 ) {
-	console.log(
-		'🚀 ~ file: firebase.js ~ line 166 ~ activeUserDocId',
-		activeUserDocId
-	);
-	console.log('🚀 ~ file: firebase.js ~ line 166 ~ profileDocId', profileDocId);
-	console.log(
-		'🚀 ~ file: firebase.js ~ line 166 ~ isFollowingProfile',
-		isFollowingProfile
-	);
-
 	// params
 	// logged in user doc id
 	// profile user id that is either going to be followed or unfollowed

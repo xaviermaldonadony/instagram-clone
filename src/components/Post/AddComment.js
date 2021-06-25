@@ -19,6 +19,7 @@ export default function AddComment({
 		event.preventDefault();
 
 		setComments([...comments, { displayName, comment }]);
+		// setComments([{ displayName, comment }, ...comments]);
 		setComment('');
 
 		return firebase
