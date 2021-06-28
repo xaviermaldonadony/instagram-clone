@@ -33,7 +33,9 @@ export default function AddComment({
 
 	return (
 		<div className='border-t border-gray-primary'>
+			{/* {console.log(`add-comment-submit-${docId}`)} */}
 			<form
+				data-testid={`add-comment-submit-${docId}`}
 				className='flex justify-between pl-0 pr-5'
 				method='POST'
 				onSubmit={(event) =>
@@ -43,6 +45,7 @@ export default function AddComment({
 				}
 			>
 				<input
+					data-testid={`add-comment-${docId}`}
 					aria-label='Add a comment'
 					type='text'
 					autoComplete='off'

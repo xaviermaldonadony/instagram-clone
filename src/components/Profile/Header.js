@@ -61,7 +61,7 @@ export default function Header({
 					<img
 						src={`/images/avatars/${profileUsername}.jpg`}
 						alt={`${user.username} profile`}
-						className='rounded-full h-40 w-40 flex'
+						className='rounded-full h-16 w-16 md:h-20 lg:h-40 md:w-20 lg:w-40 flex'
 					/>
 				) : (
 					<Skeleton circle width={240} height={240} />
@@ -71,7 +71,7 @@ export default function Header({
 			{profileUsername ? (
 				<div className='flex items-center justify-center flex-col col-span-2'>
 					<div className='container flex items-center'>
-						<p className='text-2xl mr-4'>{profileUsername}</p>
+						<p className='text-xl md:text-2xl mr-4'>{profileUsername}</p>
 						{activeBtnFollow && (
 							<button
 								className='bg-blue-medium font-bold text-sm rounded text-white w-20 h-8'
@@ -87,7 +87,7 @@ export default function Header({
 							</button>
 						)}
 					</div>
-					<div className='container flex mt-4'>
+					<div className='container flex mt-4 flex-col md:flex-row'>
 						{!followers || !following ? (
 							<Skeleton count={1} width={677} height={24} />
 						) : (

@@ -11,7 +11,6 @@ export default function Comments({
 	commentInput,
 }) {
 	const [comments, setComments] = useState(allComments);
-	console.log('🚀 ~ file: Comments.js ~ line 14 ~ comments', comments);
 
 	return (
 		<>
@@ -22,7 +21,10 @@ export default function Comments({
 					</p>
 				)}
 				{comments.map((item) => (
-					<p key={`${item.comment}-${item.displayName}`} className='mb-1'>
+					<p
+						key={`${item.comment}-${item.displayName}`}
+						className='text-sm md:text-base mb-1'
+					>
 						<Link to={`/p/${item.displayName}`}>
 							<span className='mr-1 font-bold'>{item.displayName}</span>
 						</Link>

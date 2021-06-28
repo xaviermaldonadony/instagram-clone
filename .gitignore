@@ -24,3 +24,5 @@ yarn-error.log*
 
 .env
 *.txt
+
+src/__tests__/pages/SignUp.test.js

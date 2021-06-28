@@ -13,7 +13,7 @@ export default function Header() {
 	const history = useHistory();
 
 	return (
-		<header className='h-16 bg-white border-b border-gray-primary mb-8'>
+		<header className='h-16 px-4 lg:px-0 bg-white border-b border-gray-primary mb-8'>
 			<div className='container mx-auto max-w-screen-lg h-full'>
 				<div className='flex justify-between h-full'>
 					<div className='text-gray-700 text-center flex items-center  cursor pointer'>
@@ -28,12 +28,12 @@ export default function Header() {
 						</h1>
 					</div>
 					<div className='text-gray-700 text-center flex items-center'>
-						{user.username ? (
+						{user ? (
 							<>
 								<Link to={ROUTES.DASHBOARD} aria-label='Dashboard'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										className='h-6 w-6 mr-6 text-black-light cursor-pointer'
+										className='h-6 w-6 mr-3 lg:mr-6  text-black-light cursor-pointer'
 										fill='none'
 										viewBox='0 0 24 24'
 										stroke='currentColor'
@@ -62,7 +62,7 @@ export default function Header() {
 								>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										className='h-6 w-6 mr-6 text-black-light cursor-pointer'
+										className='h-6 w-6 mr-3 lg:mr-6 text-black-light cursor-pointer'
 										fill='none'
 										viewBox='0 0 24 24'
 										stroke='currentColor'
@@ -92,7 +92,7 @@ export default function Header() {
 										type='button'
 										className='bg-blue-medium font-bold text-sm rounded text-white w-20 h-8'
 									>
-										Log In
+										Login
 									</button>
 								</Link>
 								<Link to={ROUTES.SIGN_UP}>

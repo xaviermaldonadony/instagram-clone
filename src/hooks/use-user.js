@@ -3,7 +3,7 @@ import { getUserByUserId } from '../services/firebase';
 
 // gets looged in user with the user id from authentication
 export default function useUser(userId) {
-	const [activeUser, setActiveUser] = useState({});
+	const [activeUser, setActiveUser] = useState();
 
 	useEffect(() => {
 		async function getUserObjByUserId() {
@@ -18,5 +18,5 @@ export default function useUser(userId) {
 		}
 	}, [userId]);
 
-	return { user: activeUser };
+	return { user: activeUser, setActiveUser };
 }
