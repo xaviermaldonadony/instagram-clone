@@ -79,7 +79,7 @@ export default function Header() {
 									<Link to={`/p/${user?.username}`}>
 										<img
 											src={`/images/avatars/${user?.username}.jpg`}
-											alt={`${user?.username} profile`}
+											alt={`${user?.username}`}
 											className='rounded-full h-8 w-8 flex'
 										/>
 									</Link>
